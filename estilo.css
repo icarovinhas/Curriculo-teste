@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #166C96;
+    width: 100vw;
+}
+
+div#logoheader {
+    height: 130px;
+    width: 100vw;
+    text-align: left;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.459);
+}
+
+div#logoheader > a > img {
+    height: 100px;
+    width: 300px;
+}
+
+img#logo {
+    padding-top: 30px;
+    height: 300px;
+    width: 300px;
+}
+
+div#foto {
+    text-align: center;
+}
+
+div#foto > img {
+    width: 96%;
+}
+
+img {
+    height: 580px;
+    width: 100%;
+}
+
+div#dados {
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+div#dados > p {
+    padding-left: 12px;
+    text-align: left;
+    font-size: 2.5em;
+}
+
+div#dados > p#crp {
+    font-size: 1.3em;
+}
+
+h1#atendimento, h1#pessoa {
+    color: #02283b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1#pessoa {
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 30px;
+}
+
+p {
+    color: #02283b;
+    margin-top: 10px;
+    text-align: center;
+}
+
+hr.linha-separadora {
+    color: #02283b;
+    margin: 20px 0;
+}
+
+section > p {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+section#espec {
+    width: 100vw;
+    height: 800px;
+    background-color: #166C96;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.459);
+}
+
+section#espec > h1 {
+    color: white;
+    font-size: 1.8em;
+    padding-top: 15px;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.img-flipper {
+    width: 480px;
+    height: 294px;
+}
+
+.flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+#switch:checked ~ .flip-container .flipper {
+    transform: rotateY(180deg);
+}
+
+#switch {
+    display: none;
+}
+
+div#contato {
+    margin: 0px 7px;
+    margin-bottom: 20px;
+    width: 93vw;
+    height: 570px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+}
+
+div#contato > h2 {
+    font-size: 1.8em;
+    padding-top: 15px;
+    padding-left: 12px;
+    color: #02283b;
+    margin-bottom: 15px;
+}
+
+div#celular, div#e-mail, div#localizacao {
+    margin-bottom: 10px;
+}
+
+i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Largura do círculo */
+    height: 40px; /* Altura do círculo */
+    background-color: #166C96; /* Cor de fundo do círculo */
+    border-radius: 50%; /* Transformar o quadrado em círculo */
+    color: white; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-left: 10px; /* Espaçamento ao redor do círculo */
+    padding: 5px; /* Espaçamento interno do círculo */
+}
+
+a.a {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #011824;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #166C96;
+}
+
+div#logofooter {
+    text-align: center;
+}
+
+div#logofooter > a > img {
+    height: 100px;
+    width: 300px;
+}
+
+div#app {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+i#wpp, i#linkedin, i#insta {
+    background-color: white;
+    color: #166C96;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+main > h1, main > h2, main > p {
+    margin: 10px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+main > h1 {
+    font-size: 2.3em;
+}
+
+main > h2 {
+    font-size: 1.2em;
+}
+
+main > p {
+    font-size: 2em;
+    text-align: left;
+    line-height: 1.5; /* Adiciona espaçamento entre as linhas */
+}
+
+.linha-separadora {
+    border: none; /* Remove a borda padrão */
+    border-top: 1px solid gray; /* Adiciona uma linha cinza */
+    margin: 20px 0; /* Adiciona espaçamento acima e abaixo da linha */
+}
+
+.img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+}
+
+.swiper {
+    height: 800px; /* Define a altura do swiper */
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightblue; /* Cor de fundo da slide */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    z-index: 10; /* Para garantir que fique acima da imagem */
+}
+
+section#consultorio {
+    text-align: left;
+}
+
+section#consultorio > h1 {
+    padding-left: 12px;
+    color: cadetblue;
+}
+
+@media (max-width: 450px) {
+    .swiper {
+        height: 270px;
+    }
+}
+
+div#botao {
+    text-align: center;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bolder;
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+button#curriculo {
+    background-color: cadetblue;
+}
+
+button#contato {
+    background-color: burlywood;
+}
+
+footer {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+td.titulo {
+    font-size: 1.1em;
+    font-weight: bolder;
+}

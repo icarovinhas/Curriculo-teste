@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grande {
+    display: none;
+}
+
+.navbar {
+    background-color: #065e99 !important;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+}
+
+.container {
+    flex-direction: column; /* Muda a direção para coluna */
+    margin-top: 30px;
+    display: flex; /* Ativa o flexbox */
+    align-items: stretch; /* Faz com que os itens ocupem toda a altura */
+}
+
+#pessoa {
+    border-radius: 15px;
+    width: 100%; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da altura */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+}
+
+.nome {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+#crp {
+    font-size: 1.3em;
+}
+
+p {
+    flex-grow: 1; /* Faz com que o parágrafo ocupe todo o espaço restante */
+    margin: 10px auto; /* Remove a margem padrão do parágrafo */
+    display: flex; /* Ativa o flexbox para o parágrafo */
+    align-items: center; /* Centraliza o texto verticalmente */
+}
+
+.butao {
+    margin: 30px;
+    text-align: center;
+}
+
+.butao > h1 {
+    font-weight: bolder;
+}
+
+.btn {
+    text-align: center;
+    font-size: 1.5em; /* Tamanho da fonte proporcional à largura da tela */
+    margin: 10px auto;
+    height: 6vh; /* Altura fixa do botão */
+    width: 250px; /* Largura fixa mínima */
+    max-width: 100%; /* Permite que o botão se expanda até 100% da largura do container */
+    background-color: #065e99 !important;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+    border-radius: 5px; /* Adiciona um pouco de arredondamento */
+}
+
+.d-flex {
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Padrão em colunas para telas menores */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    width: 89%;
+    flex: 1 1 18rem; /* Isso ajuda a garantir que todos os cards tenham a mesma largura base */
+    margin: 10px 20px; /* Isso é importante para espaçamento */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+    flex: 1
+    
+}
+
+#carouselExampleIndicators {
+    text-align: center;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+.carousel-custom {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+    width: 98%;
+    margin: 0 auto; /* Centraliza o carrossel na página */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.especializacoes-container {
+    margin-left: 20px; /* Margem da borda esquerda */
+    margin-right: 20px; /* Margem da borda direita */
+}
+
+.text-especializacoes {
+    font-weight: bolder;
+    text-align: left;  /* Alinha o texto à esquerda */
+    margin-top: 20px;  /* Margem acima do título */
+    margin-bottom: 10px; /* Margem abaixo do título */
+}
+
+
+div#contato {
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 85vw; /* Largura da div, ajuste conforme necessário */
+    height: auto; /* Pode ser auto ou um valor fixo */
+    min-height: 65vh; /* Altura mínima, ajuste conforme necessário */
+    background-color: #d8d8d8; /* Cor de fundo, ajuste conforme necessário */
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.158);
+    position: relative; /* Para melhor controle do posicionamento interno */
+}
+
+div#contato > h2 {
+    font-weight: bolder;
+    text-align: left;
+    font-size: 2em;
+    padding-top: 15px;
+    padding-left: 12px;
+    color: #02283b;
+    margin-bottom: 15px;
+}
+
+div#celular {
+    text-align: left;
+
+    margin-bottom: 10px;
+}
+
+div#e-mail {
+    text-align: left;
+
+    margin-bottom: 10px;
+}
+
+div#localizacao {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Largura do círculo */
+    height: 40px; /* Altura do círculo */
+    background-color: #065e99; /* Cor de fundo do círculo */
+    border-radius: 50%; /* Transformar o quadrado em círculo */
+    color: white; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-left: 10px; /* Espaçamento ao redor do círculo */
+    padding: 5px; /* Espaçamento interno do círculo */
+    color: white;
+    font-size: 1.2em;
+}
+
+a.a {
+    padding-left: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #011824;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#iframe {
+    width: 100%; /* O iframe ocupará 100% da largura da div pai */
+    height: 100%; /* O iframe ocupará 100% da altura da div pai */
+    border: none; /* Remove a borda padrão, se necessário */
+    display: block; /* Garante que o iframe não tenha espaços indesejados */
+}
+
+iframe {
+    width: 85vw;
+    height: 65vh;
+}
+
+footer {
+    background-color: #065e99;
+}
+
+div#logofooter {
+    padding-top: 20px;
+    text-align: center;
+}
+
+div#logofooter > a > img {
+    height: 100px;
+    width: 300px;
+}
+
+div#app{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+i#wpp {
+    background-color: white;
+    color: #065e99;
+}
+
+i#linkedin {
+    background-color: white;
+    color: #065e99;
+}
+
+i#insta {
+    background-color: white;
+    color: #065e99;
+}
+

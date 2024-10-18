@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+    .btn {
+        font-size: 1.6em;
+        width: 320px;
+    }
+
+    #grande {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .especializacoes-container {
+        margin-left: 10px;  /* Diminui a margem em telas menores */
+        margin-right: 10px; /* Diminui a margem em telas menores */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .btn {
+        font-size: 1.6em;
+        width: 320px;
+    }
+
+    #grande {
+        display: block;
+    }
+
+    #pequeno {
+        display: none;
+    }
+
+
+    .container {
+        flex-direction: row;
+        /* Alinha os itens em uma linha */
+        justify-content: space-between;
+    }
+
+    #pessoa {
+        max-width: 100%;
+        /* Ajusta a largura para ocupar o espaço disponível */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+
+    #minicontainer {
+        max-width: 50%;
+        /* Define o tamanho do container de texto */
+    }
+
+    #grande {
+        display: block;
+        /* Exibe o parágrafo "grande" apenas em telas grandes */
+    }
+
+    #pequeno {
+        display: none;
+        /* Oculta os parágrafos "pequeno" em telas grandes */
+    }
+
+    .container > #pessoa {
+        margin-left: 20px;
+    }
+
+    .card-container {
+        flex-direction: row !important;
+        justify-content: space-between; /* Espaça os cards uniformemente */
+    }
+    
+    .card {
+        flex: 1;
+        width: 80%;
+    }
+
+    .carousel-container {
+        width: 60%; /* 50% em telas maiores */
+        margin: 0 auto; /* Centraliza o carrossel */
+    }
+
+    i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.7em;
+    }
+
+    a.a {
+        font-size: 1.4em;
+    }
+
+}
